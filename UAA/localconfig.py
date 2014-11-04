@@ -6,9 +6,9 @@ winpath = "C:\\pywikipedia\\"#Windows path for pywikipedia, need "\\" for folder
 linuxpath = "/data/project/deltaquad-bots/pywikipedia/pywikipedia"
 
 #Onwiki paths
-waitlist = "User:Ankit Maity/UAA/Wait" #The pages have not been made yet. NOTE TO SELF!
+waitlist = "User:Ankit Maity/UAA/Wait" 
 gopage = "User:Ankit Maity/UAA/Run"
-timepage = "User:Ankit Maity/UAA/Time"
+timepage = "User:Ankit Maity/UAA/Time" #Only page left to make. NOTE TO SELF!
 settings = "User:Ankit Maity/UAA/Settings"
 blacklist = 'User:Ankit Maity/UAA/Blacklist'
 whitelist = 'User:Ankit Maity/UAA/Whitelist'
