@@ -406,5 +406,4 @@ global wl
 wl = getlist("wl")
 global sl
 sl = getlist("sl")
-Status API Training Shop Blog About
-© 2014 GitHub, Inc. Terms Privacy Security Contact
+
