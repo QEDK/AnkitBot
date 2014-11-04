@@ -213,7 +213,7 @@ def waitTillEdit(user):
         if registertime[0]:
                 checkUser(user, False, True)
                 return
-        summary = "[[User:DeltaQuadBot|DeltaQuadBot]] Task UAA listing - Waiting for [[User:"+user+"]] ([[Special:Block/"+user+"|Block]]) to edit"
+        summary = "[[User:AnkitBot|AnkitBot]] Task UAA listing - Waiting for [[User:"+user+"]] ([[Special:Block/"+user+"|Block]]) to edit"
         site = wikipedia.getSite()
         pagename = localconfig.waitlist
         page = wikipedia.Page(site, pagename)
@@ -289,7 +289,7 @@ def checkWait():
         waiters = waiters.replace("*{{User|","")
         waiters = waiters.split("\n")
         for waiter in waiters:
-                if waiter == "":continue#Non-existant user
+                if waiter == "":continue#Non-existent user
                 if checkRegisterTime(waiter, 7,False):continue
                 if checkBlocked(waiter):continue#If user is blocked, skip putting them back on the list.
                 if getEditCount(waiter) == True:#If edited, send them to UAA
