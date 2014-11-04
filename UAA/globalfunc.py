@@ -1,18 +1,3 @@
-Skip to content
- This repository
-Explore
-Gist
-Blog
-Help
-Ankit Maity Ankit-Maity
- 
-2  Watch 
-  Star 4
- Fork 2dqwiki/DeltaQuadBot
- branch: master  DeltaQuadBot / UAA / globalfunc.py
-DeltaQuaddqwiki on Aug 9 fml, disabled the function by accident :vertical_traffic_light:
-1 contributor
-Executable File  409 lines (405 sloc)  17.514 kb RawBlameHistory   
 # -*- coding: utf-8 -*-
 from datetime import datetime
 import sys
