@@ -13,7 +13,7 @@ override = False
 if not globe.startAllowed(override):
         print "Fatal - System Access Denied."
         sys.exit(1)
-        print "System Alert - Program Still running."
+        print "System Alert - Program is still running."
 globe.main()
 globe.checkWait()
 globe.pageCleanup()
