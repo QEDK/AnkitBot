@@ -6,13 +6,13 @@ winpath = "C:\\pywikipedia\\"#Windows path for pywikipedia, need "\\" for folder
 linuxpath = "/data/project/deltaquad-bots/pywikipedia/pywikipedia"
 
 #Onwiki paths
-waitlist = "User:Ankit Maity/UAA/Wait" 
-gopage = "User:Ankit Maity/UAA/Run"
-timepage = "User:Ankit Maity/UAA/Time" #Only page left to make. NOTE TO SELF!
-settings = "User:Ankit Maity/UAA/Settings"
-blacklist = 'User:Ankit Maity/UAA/Blacklist'
-whitelist = 'User:Ankit Maity/UAA/Whitelist'
-simlist =  'User:Ankit Maity/UAA/Similar'
+waitlist = "User:QEDK/UAA/Wait" 
+gopage = "User:QEDK/UAA/Run"
+timepage = "User:QEDK/UAA/Time" #Only page left to make. NOTE TO SELF!
+settings = "User:QEDK/UAA/Settings"
+blacklist = 'User:QEDK/UAA/Blacklist'
+whitelist = 'User:QEDK/UAA/Whitelist'
+simlist =  'User:QEDK/UAA/Similar'
 postpage = "Wikipedia:Usernames for administrator attention/Bot"
 holdpage = "Wikipedia:Usernames for administrator attention/Holding pen"
 
