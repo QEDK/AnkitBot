@@ -77,7 +77,7 @@ def searchlist(line, listtype):
         return False
     if listtype == "sl":
         i=0
-        while i < len(sl):#can be omptimized with for statement
+        while i < len(sl):#can be optimized with for statement
             if re.search(".", sl[i]) != None:
                 stringline = sl[i].split(":")[1]
                 stringline = stringline.split(" ")
@@ -186,13 +186,13 @@ def post(user, match, flags, restrict):
         text = "\n\n*{{user-uaa|1="+user+"}}\n"
         if "LOW_CONFIDENCE" in flags:
                 text = text + "*:{{clerknote}} There is low confidence in this filter test, please be careful in blocking. ~~~~\n"
-        if "WAIT_TILL_EDIT" in flags and restrict != False:#If waittilledit override it not active, aka first run
+        if "WAIT_TILL_EDIT" in flags and restrict != False:#If WAIT_TILL_EDIT override is not active, aka first run
                 edited = getEditCount(user)
                 if edited == None:
-                        return#Skip user, probally non-existant
+                        return#Skip user, probably non-existent
                 if edited == False:
                         waitTillEdit(user)#Wait till edit, user has not edited
-                        return#leave this indented, or it will not continue to report edited users
+                        return#Leave this indented or it will not continue to report edited users
         if "LABEL" in flags:
                 note = flags.split("LABEL(")[1].split(")")[0]
                 text = text + "*:Matched: " + note + " ~~~~\n"
@@ -213,7 +213,7 @@ def waitTillEdit(user):
         if registertime[0]:
                 checkUser(user, False, True)
                 return
-        summary = "[[User:AnkitBot|AnkitBot]] Task UAA listing - Waiting for [[User:"+user+"]] ([[Special:Block/"+user+"|Block]]) to edit"
+        summary = "[[User:AnkitBot|AnkitBot]] Task: UAA listing - Waiting for [[User:"+user+"]] ([[Special:Block/"+user+"|Block]]) to edit"
         site = wikipedia.getSite()
         pagename = localconfig.waitlist
         page = wikipedia.Page(site, pagename)
@@ -275,7 +275,7 @@ def startAllowed(override):
                 runDry()
         if start == "Dry":
                 print "Notice - Running Checkwait.py only"
-                import checkwait #import as it's a py file
+                import checkwait #import as it's a .py file
                 return False
         else:
                 return False
@@ -379,7 +379,7 @@ def pageCleanup():
                 rawnewlist = rawnewlist + "\n" + user
                 newlist = newlist + "*{{user-uaa|1=" + ''.join(cell)
                 #print user
-        ## UAA Bot page posting ##
+        ## UAA Bot Page posting ##
         summary = localconfig.editsumclear
         site = wikipedia.getSite()
         pagename = localconfig.postpage
@@ -387,7 +387,7 @@ def pageCleanup():
         pagetxt = page.get()
         newlist = "==[[Wikipedia:UAA/BOT|Bot-reported]]==\n" + newlist
         page.put(newlist, comment=summary)
-        ## UAA Holding pen posting ##
+        ## UAA Holding Pen posting ##
         site = wikipedia.getSite()
         pagename = localconfig.holdpage
         page = wikipedia.Page(site, pagename)
